@@ -16,7 +16,7 @@ public class ExecFiltroMapa {
 
         Map<Integer, String> mapaFiltrado = filtrarClavesPares(mapaOriginal);
 
-        System.out.println("Mapa filtrado con claves pares:");
+        Request.showMessage("Mapa filtrado con claves pares:");
         for (Map.Entry<Integer, String> entrada : mapaFiltrado.entrySet()) {
             Request.showMessage(entrada.getKey() + " -> " + entrada.getValue());
         }
